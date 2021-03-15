@@ -71,13 +71,16 @@ function deleteAllChallenges(){
 	 * 
 	 */
 	
+	 if (confirm("Are you sure?")) 
+	{
 		var challenges = document.getElementsByClassName("challenge");
 		for (let item of challenges)
 		{
 			
 			item.getElementsByClassName("decline")[0].click();
-		}
-
+		}	
+	
+	}
 }
 
 
