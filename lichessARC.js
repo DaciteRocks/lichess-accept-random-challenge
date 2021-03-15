@@ -66,7 +66,8 @@ function acceptSubChallenge() {
 
 function deleteAllChallenges(){
 	/**
-	 * Delete all challenges. Made for Eric Rosen.
+	 * Delete all challenges. Made for Eric Rosen by Connor Wardell (DaciteRocks) 
+	 * Connorwardell.com
 	 * 
 	 */
 	
