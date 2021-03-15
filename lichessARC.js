@@ -64,6 +64,22 @@ function acceptSubChallenge() {
 }
 
 
+function deleteAllChallenges(){
+	/**
+	 * Delete all challenges. Made for Eric Rosen.
+	 * 
+	 */
+	
+		var challenges = document.getElementsByClassName("challenge");
+		for (let item of challenges)
+		{
+			
+			item.getElementsByClassName("decline")[0].click();
+		}
+
+}
+
+
 function init(container) {
 	var div = document.createElement("div");
 	div.innerText = "Accept random challenge";
@@ -76,6 +92,15 @@ function init(container) {
 	subdiv.id = "lichess-arc-sub";
 	subdiv.onclick = acceptSubChallenge;
 	container.prepend(subdiv);
+
+
+	var subdiv = document.createElement("div");
+	subdiv.innerText = "Remove all challenges";
+	subdiv.id = "lichess-arc-delete";
+	subdiv.onclick = deleteAllChallenges;
+	container.prepend(subdiv);
+
+
 }
 
 function loadContainer() {

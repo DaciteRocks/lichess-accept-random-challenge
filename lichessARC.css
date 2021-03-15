@@ -15,3 +15,11 @@
   color: #fff;
   cursor: pointer;
 }
+
+#lichess-arc-delete {
+  padding: 5px;
+  border-radius: 2px;
+  background-color: #2390da;
+  color: #fff;
+  cursor: pointer;
+}
