@@ -99,7 +99,7 @@ function init(container) {
 
 
 	var subdiv = document.createElement("div");
-	subdiv.innerText = "Remove all challenges";
+	subdiv.innerText = "Decline all challenges";
 	subdiv.id = "lichess-arc-delete";
 	subdiv.onclick = deleteAllChallenges;
 	container.prepend(subdiv);
